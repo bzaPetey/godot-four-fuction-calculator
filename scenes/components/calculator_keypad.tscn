@@ -1,0 +1,119 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/components/calculator_button.tscn" id="1_button"]
+
+[node name="CalculatorKeypad" type="VBoxContainer"]
+size_flags_vertical = 3
+theme_override_constants/separation = 12
+
+[node name="Clear" parent="." instance=ExtResource("1_button")]
+custom_minimum_size = Vector2(0, 42)
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 16
+text = "C — Clear"
+input_type = 3
+value = ""
+
+[node name="Buttons" type="GridContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/h_separation = 8
+theme_override_constants/v_separation = 8
+columns = 4
+
+[node name="Seven" parent="Buttons" instance=ExtResource("1_button")]
+layout_mode = 2
+text = "7"
+input_type = 0
+value = "7"
+
+[node name="Eight" parent="Buttons" instance=ExtResource("1_button")]
+layout_mode = 2
+text = "8"
+input_type = 0
+value = "8"
+
+[node name="Nine" parent="Buttons" instance=ExtResource("1_button")]
+layout_mode = 2
+text = "9"
+input_type = 0
+value = "9"
+
+[node name="Divide" parent="Buttons" instance=ExtResource("1_button")]
+layout_mode = 2
+text = "÷"
+input_type = 1
+value = "/"
+
+[node name="Four" parent="Buttons" instance=ExtResource("1_button")]
+layout_mode = 2
+text = "4"
+input_type = 0
+value = "4"
+
+[node name="Five" parent="Buttons" instance=ExtResource("1_button")]
+layout_mode = 2
+text = "5"
+input_type = 0
+value = "5"
+
+[node name="Six" parent="Buttons" instance=ExtResource("1_button")]
+layout_mode = 2
+text = "6"
+input_type = 0
+value = "6"
+
+[node name="Multiply" parent="Buttons" instance=ExtResource("1_button")]
+layout_mode = 2
+text = "×"
+input_type = 1
+value = "*"
+
+[node name="One" parent="Buttons" instance=ExtResource("1_button")]
+layout_mode = 2
+text = "1"
+input_type = 0
+value = "1"
+
+[node name="Two" parent="Buttons" instance=ExtResource("1_button")]
+layout_mode = 2
+text = "2"
+input_type = 0
+value = "2"
+
+[node name="Three" parent="Buttons" instance=ExtResource("1_button")]
+layout_mode = 2
+text = "3"
+input_type = 0
+value = "3"
+
+[node name="Subtract" parent="Buttons" instance=ExtResource("1_button")]
+layout_mode = 2
+text = "−"
+input_type = 1
+value = "-"
+
+[node name="Zero" parent="Buttons" instance=ExtResource("1_button")]
+layout_mode = 2
+text = "0"
+input_type = 0
+value = "0"
+
+[node name="Decimal" parent="Buttons" instance=ExtResource("1_button")]
+layout_mode = 2
+text = "."
+input_type = 0
+value = "."
+
+[node name="Equals" parent="Buttons" instance=ExtResource("1_button")]
+layout_mode = 2
+text = "="
+input_type = 2
+value = ""
+
+[node name="Add" parent="Buttons" instance=ExtResource("1_button")]
+layout_mode = 2
+text = "+"
+input_type = 1
+value = "+"

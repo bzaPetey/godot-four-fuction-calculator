@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://e21vuslvga1y"]
+
+[ext_resource type="PackedScene" path="res://scenes/components/calculator_display.tscn" id="1_display"]
+[ext_resource type="PackedScene" path="res://scenes/components/calculator_keypad.tscn" id="2_keypad"]
+
+[sub_resource type="StyleBoxFlat" id="Style_background"]
+bg_color = Color(0.08, 0.1, 0.15, 1)
+
+[node name="CalculatorUI" type="Control" unique_id=1361881157]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="Panel" parent="." unique_id=1393869379]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("Style_background")
+
+[node name="Margin" type="MarginContainer" parent="." unique_id=2125435404]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Column" type="VBoxContainer" parent="Margin" unique_id=975931239]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Title" type="Label" parent="Margin/Column" unique_id=337551183]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Calculator"
+
+[node name="Display" parent="Margin/Column" unique_id=1366711371 instance=ExtResource("1_display")]
+
+[node name="Keypad" parent="Margin/Column" unique_id=1550190446 instance=ExtResource("2_keypad")]
+layout_mode = 2

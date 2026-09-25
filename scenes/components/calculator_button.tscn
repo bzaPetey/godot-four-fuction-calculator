@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bwe7w8wu0g336"]
+
+[ext_resource type="Script" uid="uid://lpy6jvii7fi0" path="res://scripts/calculator_button.gd" id="1_button"]
+
+[node name="CalculatorButton" type="Button" unique_id=1475617762]
+custom_minimum_size = Vector2(0, 48)
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 24
+text = "0"
+script = ExtResource("1_button")
+value = "0"
