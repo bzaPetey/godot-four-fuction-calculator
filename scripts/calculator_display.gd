@@ -1,7 +1,6 @@
-class_name CalculatorDisplay
-extends PanelContainer
-## Reusable display: listens to the global calculator independently of its parent.
+class_name CalculatorDisplay extends PanelContainer
 
+## Reusable display: listens to the global calculator independently of its parent.
 @onready var display: Label = $Display
 
 
